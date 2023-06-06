@@ -8,7 +8,6 @@ goBtnEl.addEventListener('click', () => {
   fetch(url)
     .then((response) => response.json())
     .then((todo) => {
-      // make more complex html to display id, status, etc
       todoEl.innerHTML = todo.title;
     });
 });
